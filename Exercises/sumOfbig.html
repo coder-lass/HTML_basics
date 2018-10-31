@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sum of 2 biggest numbers</title>
+</head>
+<body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+    <script>
+        var arr = [2,3,4,5,1];
+        document.getElementById("p1").innerHTML="The array is : " + arr;
+
+        arr.sort();
+        len = arr.length;
+        var sum = arr[len-1] + arr[len-2];
+
+        document.getElementById("p2").innerHTML="Sum of two biggest number in array is : " + sum;
+
+        console.log(arr);
+    </script>
+</body>
+</html>

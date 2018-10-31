@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        var arr = [];
+        var numb = [
+            1,2,3,4,5,2,3,4,2,2
+        ];
+        document.getElementById("p1").innerHTML="Original array is : " + numb;
+        console.log(numb);
+        var len = numb.length;
+        for(i=0;i<len-1;i++){
+            for(j=i+1;j<len;j++){
+             if(numb[i]==numb[j]){
+                 numb[i]=null;
+                 
+             }
+           }
+        }
+        for(k=0;k<numb.length;k++){
+            if(numb[k]!=null)
+             arr.push(numb[k]);
+        }
+        document.getElementById("p2").innerHTML = "After removing duplicates : " + arr;
+        console.log(numb);
+    </script>
+</body>
+
+</html>

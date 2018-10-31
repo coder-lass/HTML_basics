@@ -1,0 +1,50 @@
+body{
+    background-color: skyblue;
+}
+.tyre1{
+    position: relative;
+    right: 46%;
+    top : 310px;
+    animation: rotation 2s infinite linear;
+}
+.tyre2{
+    position: relative;
+    right : 22.5%;
+    top : 310px;
+    animation: rotation 2s infinite linear;
+}
+/* .car-outer{
+    position: relative;
+    height:220px;
+    width:640px;
+} */
+
+@keyframes rotation {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(359deg);
+    }
+}
+
+
+#car {
+    position: relative;
+    top : 310px;
+    z-index: 4;
+    /* width:100%; */
+}
+
+#street {
+    position: relative;
+    height: 30px;
+    top: 300px;
+    background-color: gray;
+    color : gray;
+}
+
+#cloud {
+    position: absolute;
+    z-index: 0;
+}

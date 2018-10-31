@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Add contacts</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <div class="col-sm-2" >
+                <input type="text" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="col-sm-2" >
+                    <input type="text" id="place" placeholder="Enter place" required>
+            </div>
+            <div class="col-sm-2">
+                    <input type="text" id="num" pattern="[2-9]{2}\d{8}" placeholder="Enter number" required>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-primary" onclick="add()">Add Contact</button>
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
+    </div>
+    <script type="text/javascript" src="Sign.js">
+  
+    </script>
+</body>
+</html>
